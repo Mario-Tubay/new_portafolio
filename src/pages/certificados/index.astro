@@ -12,21 +12,23 @@ const interval = 50
     {
         certificados.map(entry => {
             return (
-                <PostCard2
-                        entry={entry}
-                        title={entry.data.title}
-                        tags={entry.data.tags}
-                        category={entry.data.category}
-                        published={new Date(entry.data.published)}
-                        url={getPostUrlBySlug(entry.slug)}
-                        image={entry.data.image}
-                        description={entry.data.description}
-                        draft={entry.data.draft}
-                        class:list="onload-animation"
-                        style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
-                ></PostCard2>
+                <>
+                    <PostCard2
+                            entry={entry}
+                            title={entry.data.title}
+                            tags={entry.data.tags}
+                            category={entry.data.category}
+                            published={new Date(entry.data.published)}
+                            url={getPostUrlBySlug(entry.slug)}
+                            image={entry.data.image}
+                            description={entry.data.description}
+                            draft={entry.data.draft}
+                            class:list="onload-animation"
+                            style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
+                    ></PostCard2>
+                    <br />
+                </>
             )
-            
         })
           
     }

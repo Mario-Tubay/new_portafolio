@@ -1,7 +1,7 @@
 ---
 title: Curso de JavaScript
-published: 2024-04-01
-description: "How to use this blog template."
+published: 2021-12-16
+description: "Certificación del curso de JavaScript"
 image: "./cover.jpeg"
 tags: [ "Js"]
 category: Guides
