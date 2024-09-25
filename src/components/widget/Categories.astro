@@ -25,13 +25,17 @@ const style = Astro.props.style
 <WidgetLayout name={i18n(I18nKey.categories)} id="categories" isCollapsed={isCollapsed} collapsedHeight={COLLAPSED_HEIGHT}
                 class={className} style={style}
 >
-    {categories.map((c) =>
-        <ButtonLink
-            url={getCategoryUrl(c.name)}
-            badge={String(c.count)}
-            label=`View all posts in the ${c.name} category`
-        >
-            {c.name}
-        </ButtonLink>
-    )}
+
+    <ButtonLink
+    url={"/certificados/"}
+    badge={String(6)}
+>
+    {"Certificados"}
+</ButtonLink>
+<ButtonLink
+    url={"/proyectos/"}
+    badge={String(10)}
+    >
+    {"Proyectos"}
+</ButtonLink>
 </WidgetLayout>

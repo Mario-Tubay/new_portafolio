@@ -1,13 +1,14 @@
 ---
 
 import WidgetLayout from './WidgetLayout.astro'
-import ButtonTag from '../control/ButtonTag.astro'
-import { getTagList } from '../../utils/content-utils'
+// import { getTagList } from '../../utils/content-utils'
+import { nameLenguages } from '../../utils/lenguajes'
 import { i18n } from '../../i18n/translation'
 import I18nKey from '../../i18n/i18nKey'
-import { url } from '../../utils/url-utils'
+// import { url } from '../../utils/url-utils'
+import LabelTag from '@components/control/LabelTag.astro'
 
-const tags = await getTagList()
+const tags = nameLenguages
 
 const COLLAPSED_HEIGHT = '7.5rem'
 
@@ -22,10 +23,22 @@ const style = Astro.props.style
 ---
 <WidgetLayout name={i18n(I18nKey.tags)} id="tags" isCollapsed={isCollapsed} collapsedHeight={COLLAPSED_HEIGHT} class={className} style={style}>
     <div class="flex gap-2 flex-wrap">
-        {tags.map(t => (
+        <!-- {tags.map(t => (
             <ButtonTag href={url(`/archive/tag/${t.name}/`)} label={`View all posts with the ${t.name} tag`}>
                 {t.name}
             </ButtonTag>
-        ))}
+        ))} -->
+        {
+            tags.map(t => (
+                <LabelTag label={t}>
+                    {t}
+                </LabelTag>
+            ))
+        }
+
+        <!-- <LabelTag label={`Lenguajes`}>
+            {"JS"}
+        </LabelTag> -->
+
     </div>
 </WidgetLayout>
