@@ -12,8 +12,6 @@ Para mí, es fundamental estar siempre actualizado con las nuevas tecnologías q
 Realicé el curso con el reconocido creador de contenido de programación [MiDuDev](https://www.twitch.tv/midudev). Lo recomiendo ampliamente, ya que enseña de manera clara y didáctica, ofreciendo contenido de calidad de forma gratuita y desinteresada.
 
 ## YouTube
-<!-- 
-<iframe width="100%" height="468" src="https://www.youtube.com/embed/5gIf0_xpFPI?si=N1WTorLKL0uwLsU_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 <iframe width="100%"" height="468" src="https://www.youtube.com/embed/RB5tR_nqUEw?si=JNTALopbns6qY8Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
