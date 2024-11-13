@@ -1,11 +1,37 @@
 ---
-import MainGridLayout from '@layouts/MainGridLayout.astro'
-import ArchivePanel from '@components/ArchivePanel.astro'
-import { i18n } from '@i18n/translation'
-import I18nKey from '@i18n/i18nKey'
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import ArchivePanel from "@components/ArchivePanel.astro";
+import { i18n } from "@i18n/translation";
+import I18nKey from "@i18n/i18nKey";
+import { proyectos } from "@utils/data";
+import PostCard2 from "@components/PostCard2.astro";
+import { getPostUrlBySlug } from "@utils/url-utils";
+
+let delay = 0;
+const interval = 50;
 ---
 
 <MainGridLayout title={i18n(I18nKey.archive)}>
-    <ArchivePanel></ArchivePanel>
+    {
+        proyectos.map((entry) => {
+            return (
+                <>
+                    <PostCard2
+                        entry={entry}
+                        title={entry.data.title}
+                        tags={entry.data.tags}
+                        category={entry.data.category}
+                        published={new Date(entry.data.published)}
+                        url={getPostUrlBySlug(entry.slug)}
+                        image={entry.data.image}
+                        description={entry.data.description}
+                        draft={entry.data.draft}
+                        class:list="onload-animation"
+                        style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
+                    />
+                    <br />
+                </>
+            );
+        })
+    }
 </MainGridLayout>
-

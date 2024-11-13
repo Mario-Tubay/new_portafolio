@@ -96,3 +96,53 @@ export const certificados = [
         }
     }
 ]
+
+
+export const proyectos = [
+    {
+        "id": "portafolio/index.md",
+        "slug": "portafolio",
+        "body": "",
+        "collection": "posts",
+        "data": {
+            "title": "Portafolio Personal",
+            "published": "2021-12-16T00:00:00.000Z",
+            "draft": false,
+            "description": "Portafolio personal que destaca mi experiencia como desarrollador web",
+            "image": "./cover.png",
+            "tags": [
+                "Js",
+                "AstroJS",
+            ],
+            "category": "Programación",
+            "lang": "",
+            "prevTitle": "JavaScript",
+            "prevSlug": "markdown",
+            "nextTitle": "Markdown Extended Features",
+            "nextSlug": "markdown-extended"
+        }
+    },
+    {
+        "id": "urbanizacion/index.md",
+        "slug": "urbanizacion",
+        "body": "",
+        "collection": "posts",
+        "data": {
+            "title": "Urbanizacion Narboni",
+            "published": "2021-12-16T00:00:00.000Z",
+            "draft": false,
+            "description": "Pagina creada para la urbanizacion Narboni",
+            "image": "./cover.png",
+            "tags": [
+                "Js",
+                "NextJS",
+            ],
+            "category": "Programación",
+            "lang": "",
+            "prevTitle": "JavaScript",
+            "prevSlug": "markdown",
+            "nextTitle": "Markdown Extended Features",
+            "nextSlug": "markdown-extended"
+        }
+    },
+]

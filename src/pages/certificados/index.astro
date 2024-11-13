@@ -2,36 +2,33 @@
 import PostCard2 from "@components/PostCard2.astro";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { certificados } from "@utils/data";
-import { getPostUrlBySlug } from '@utils/url-utils'
+import { getPostUrlBySlug } from "@utils/url-utils";
 
-let delay = 0
-const interval = 50
+let delay = 0;
+const interval = 50;
 ---
 
 <MainGridLayout title="Certificados">
     {
-        certificados.map(entry => {
+        certificados.map((entry) => {
             return (
                 <>
                     <PostCard2
-                            entry={entry}
-                            title={entry.data.title}
-                            tags={entry.data.tags}
-                            category={entry.data.category}
-                            published={new Date(entry.data.published)}
-                            url={getPostUrlBySlug(entry.slug)}
-                            image={entry.data.image}
-                            description={entry.data.description}
-                            draft={entry.data.draft}
-                            class:list="onload-animation"
-                            style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
-                    ></PostCard2>
+                        entry={entry}
+                        title={entry.data.title}
+                        tags={entry.data.tags}
+                        category={entry.data.category}
+                        published={new Date(entry.data.published)}
+                        url={getPostUrlBySlug(entry.slug)}
+                        image={entry.data.image}
+                        description={entry.data.description}
+                        draft={entry.data.draft}
+                        class:list="onload-animation"
+                        style={`animation-delay: calc(var(--content-delay) + ${delay++ * interval}ms);`}
+                    />
                     <br />
                 </>
-            )
+            );
         })
-          
     }
-    
-
 </MainGridLayout>

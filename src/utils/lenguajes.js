@@ -1,2 +1,2 @@
-export const nameLenguages = ["JS", "Python","C++", "C#","PHP", "TypeScript", "CSS", "HTML", 
-     "Visual Basic", "SQL", "PLpgSQL", "MySql"]
+export const nameLenguages = ["JS", "Python", "C#", "PHP", "TypeScript", "CSS", "HTML",
+     "PostgreSQL", "MySql", "ReactJs", "NextJs", "AstroJs", "Laravel", "React Native", "TailwindCSS"]
