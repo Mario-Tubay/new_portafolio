@@ -31,7 +31,7 @@ const oklchToHex = (str) => {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://new-portafolio-nu.vercel.app/",
+  site: "https://portafolio-sigma-ashen.vercel.app/",
   base: "/",
   trailingSlash: "always",
   integrations: [
@@ -59,7 +59,7 @@ export default defineConfig({
       },
     }),
     svelte(),
-    sitemap(),
+    // sitemap(),
     Compress({
       CSS: false,
       Image: false,
